@@ -1,0 +1,30 @@
+GET http://localhost:3008/users
+
+###
+GET http://localhost:3008/users/6219b34da911724b53cd5bbf
+
+###
+POST http://localhost:3008/users
+Content-Type: application/json
+
+{
+    "name": "Alan pamungkas",
+    "email": "alan@gmail.com",
+    "gender": "Male",
+    "imageurl": "https://1.bp.blogspot.com/-imwWcY5YLW8/Xy6qSz0mBKI/AAAAAAAAD2M/OJV10a6xZR8GPCh8PPgQWzWxqOPoqO24wCLcBGAsYHQ/s1600/saya1.jpg"
+}
+
+###
+PATCH http://localhost:3008/users/621a00190ab7e2a761c985a1
+Content-Type: application/json
+
+{
+    "name": "Doni Irawan",
+    "email": "Doni@gmail.com",
+    "gender": "Male",
+    "imageurl": "https://i0.wp.com/www.kusnendar.web.id/wp-content/uploads/2014/06/merubah-foto-di-paint.jpg"
+}
+
+
+###
+DELETE http://localhost:3008/users/6219b34da911724b53cd5bbf
